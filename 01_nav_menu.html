@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Menu</title>
+    <style>
+      .navbar {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background: #7d7deb;
+        overflow: hidden;
+      }
+
+      .navbar li {
+        float: left;
+        list-style: none;
+      }
+
+      .navbar li a {
+        display: block;
+        color: #fff;
+        padding: 20px 30px;
+        text-decoration: none;
+      }
+
+      .navbar li a:hover {
+        background: #fff;
+        color: #7d7deb;
+        font-weight: bold;
+      }
+
+      @media (max-width: 600px) {
+        .navbar li {
+          float: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Responsive Navigation Menu</h1>
+      <nav>
+        <ul class="navbar">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>
