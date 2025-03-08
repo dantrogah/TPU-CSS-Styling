@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button and Effects</title>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+
+      .btn {
+        color: #fff;
+        border: none;
+        padding: 8px 24px;
+        border-radius: 4px;
+        margin-right: 20px;
+        cursor: pointer;
+      }
+
+      .learn-more {
+        background: #004e89;
+        transition: background 2s ease 0s;
+      }
+
+      .learn-more:hover {
+        background: linear-gradient(to left, red, blue);
+        /* border: 3px solid #004e89; */
+        transform: scale(1.05);
+      }
+
+      .subscribe {
+        background: #51344d;
+        transition: background 2s ease 0s;
+      }
+
+      .subscribe:hover {
+        background: linear-gradient(#de14c3, #e5da0a);
+      }
+
+      .contact-us {
+        background: #ff6b35;
+        transition: background 2s ease 0s;
+      }
+
+      .contact-us:hover {
+        background: radial-gradient(#ff6b35 60%, #e209d0);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Buttons and Hover Effects</h1>
+    </header>
+    <main>
+      <button class="btn subscribe">Subscribe</button>
+      <button class="btn learn-more">Learn More</button>
+      <button class="btn contact-us">Contact Us</button>
+    </main>
+  </body>
+</html>
