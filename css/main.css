@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  /* border: 1px solid red; */
+  /* background: #003049; */
+  /* background: #053e91; */
+  background: #dda15e;
+  overflow: hidden;
+}
+
+ul {
+  float: right;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  padding: 20px 30px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
+ul li a:hover {
+  background: #edbe88;
+  color: #bc6c25;
+}
+
+@media (max-width: 600px) {
+  ul {
+    float: none;
+  }
+
+  ul li {
+    float: none;
+  }
+}
+
+/* Gallery */
+section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fefae0;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  max-width: 1000px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 800px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery img:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery img:hover {
+    transform: none;
+  }
+}
+
+/* Form */
+form {
+  width: 40%;
+}
+
+.form_title {
+  margin-bottom: 40px;
+  text-align: center;
+  color: #bc6c25;
+}
+div {
+  width: 100%;
+}
+label {
+  display: block;
+  font-size: 13px;
+  font-weight: normal;
+  color: #bc6c25;
+  margin-bottom: 10px;
+  font-family: cursive, sans-serif;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 14px 30px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 2px 2px 0.5px#bc6c25;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  font-size: 12px;
+}
+
+.btn {
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(to left, #dd8d48, #e6c507);
+  cursor: pointer;
+  margin-top: 20px;
+  color: #fff;
+  box-shadow: 3px 3px 0.5px #dd8d48;
+}
+
+.btn:hover {
+  opacity: 0.6;
+  transform: scale(1);
+}
