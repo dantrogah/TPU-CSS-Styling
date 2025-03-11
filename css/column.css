@@ -1,0 +1,37 @@
+body {
+  width: 80%;
+  margin: 0 auto;
+  background: #d8d3d3;
+  line-height: 1.5;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.container {
+  display: flex;
+}
+
+.container_content {
+  flex-grow: 2fr;
+  padding: 20px;
+}
+
+.sidebar {
+  flex-basis: 400px;
+  border-left: 1px solid #333;
+  padding-left: 30px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .sidebar {
+    border: none;
+    border-top: 1px solid #333;
+  }
+}
