@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice Lesson</title>
+    <style>
+      .profile-section {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+      }
+
+      .profile-header {
+        /* border: 1px solid green; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .profile_picture {
+        width: 100px;
+        border-radius: 50%;
+      }
+
+      .bio {
+        max-width: 40%;
+      }
+
+      .posts {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding-top: 20px;
+        /* border: 1px solid red; */
+      }
+
+      .post {
+        width: 200px;
+        height: 200px;
+        background: lightgray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      
+    </style>
+  </head>
+  <body>
+    <div class="profile-section">
+      <div class="profile-header">
+        <img
+          class="profile_picture"
+          src="./images/basketball.png"
+          alt=""
+          width="150px"
+        />
+        <div class="bio">
+          Hey, I am Dantrogah. I am a Software Developer and I love coding...
+        </div>
+      </div>
+      <div class="posts">
+        <div class="post">Post 1</div>
+        <div class="post">Post 2</div>
+      </div>
+    </div>
+  </body>
+</html>
